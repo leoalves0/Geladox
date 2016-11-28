@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Latest compiled and minified CSS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<head>
+<title>GELADOX</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<style>
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav navbar-left">
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+					<b>GELADOX</b></a></li>
+		</ul>
+	</div>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+
+				</button>
+
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a action="/exemplo/ViewLojista.jsp"
+						href="/exemplo/ViewLojista.jsp"><span
+							class="glyphicon glyphicon-log-in"></span> Lojista</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="jumbotron">
+		<div class="container text-center">
+			<form method="post" action="" role="search">
+				<div class="form-group">
+					<div class="col-md-8">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+
+					<button type="submit" class="btn btn-default">Pesquisar</button>
+
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<div class="container-fluid bg-3 text-center">
+
+		<h3></h3>
+		<br>
+	</div>
+
+	<div class="container-fluid bg-3 text">
+		<br>
+		<div class="container">
+			<h2></h2>
+
+			<table class="table">
+
+				<tr>
+					<th>Produto</th>
+					<th>Fabricante</th>
+					<th>Loja</th>
+					<th>Imagem</th>
+				</tr>
+
+
+				<tr>
+					<td>Geladeira top</td>
+					<td>Brastemp</td>
+					<td>Ricardo Eletro I</td>
+
+				</tr>
+				<tr>
+					<td>Geladeira Birrls</td>
+					<td>Electrolux</td>
+					<td>Ricardo Eletro II</td>
+				</tr>
+				<tr>
+					<td>Geladeira Xablau</td>
+					<td>Boch</td>
+					<td>Ricardo Eletro III</td>
+				</tr>
+
+			</table>
+			<div id="carousel-example-generic" class="carousel slide"
+				data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0"
+						class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/gears.jpg">
+						<div class="carousel-caption">
+							<h3>Electrolux</h3>
+						</div>
+					</div>
+					<div class="item">
+						<img src="images/gears.jpg">
+						<div class="carousel-caption">
+							<h3>Brastemp</h3>
+						</div>
+					</div>
+					<div class="item">
+						<img src="images/gears.jpg">
+						<div class="carousel-caption">
+							<h3>Boch</h3>
+						</div>
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic"
+					role="button" data-slide="prev"> <span
+					class="glyphicon glyphicon-chevron-left"></span>
+				</a> <a class="right carousel-control" href="#carousel-example-generic"
+					role="button" data-slide="next"> <span
+					class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+			<!-- Carousel -->
+
+
+		</div>
+	</div>
+	</div>
+	<br>
+	<br>
+
+	<footer class="container-fluid text-center">
+		<p><b> As Melhores Geladeiras do Brasil </b></p>
+	</footer>
+</html>
